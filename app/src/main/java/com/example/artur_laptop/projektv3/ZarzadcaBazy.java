@@ -128,10 +128,41 @@ public class ZarzadcaBazy extends SQLiteOpenHelper {
         return "Nie udalo sie";
     }
 
+    public int zwroc_ID(String nazwa)
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+        int ID;
+        String name = "";
+        Cursor c = dajWszystkie();
+        if(c.moveToFirst()){
+            name = c.getString(2) + " " + c.getString(1);
+            if(name.equals(nazwa)){
+                ID = c.getInt(0);
+                return ID;
+            }
+        }
+
+        while(c.moveToNext()){
+            name = c.getString(2) + " " + c.getString(1);
+            if(name.equals(nazwa)){
+                ID = c.getInt(0);
+                return ID;
+            }
+        }
+        return -1;
+    }
+
     public void wyczysc_baze()
     {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor c = dajWszystkie();
         db.execSQL("delete from "+ "telefony");
+    }
+
+    public boolean DeleteByID(int ID_to_delete)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("telefony","nr" + " = ?", new String[] {String.valueOf(ID_to_delete)});
+        return true;
     }
 }

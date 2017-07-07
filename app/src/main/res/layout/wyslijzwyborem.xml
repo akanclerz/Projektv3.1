@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText5"
         android:textColorHint="#66ffcc"
+        android:textColor="#66ffcc"
         android:hint="Wiadomosc dodatkowa"
         android:layout_below="@+id/editInZwyborem"
         android:layout_centerHorizontal="true"

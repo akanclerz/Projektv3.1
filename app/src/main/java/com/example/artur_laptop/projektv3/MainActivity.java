@@ -70,12 +70,19 @@ public class MainActivity extends AppCompatActivity
 
         send.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Context context;
-                context = getApplicationContext();
-                Intent intent = new Intent(context,Send.class);
-                intent.putExtra(coordy,s);
-                intent.putExtra(coodry_tylko,do_zwrotu);
-                startActivity(intent);
+                if(do_zwrotu.equals("Nieznana lokacja lub nie uzyto GPS!!!")){
+                    Toast.makeText(getApplicationContext(),
+                            "Poczekaj aż GPS ustali Twoje współrzędne", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Context context;
+                    context = getApplicationContext();
+                    Intent intent = new Intent(context,Send.class);
+                    intent.putExtra(coordy,s);
+                    intent.putExtra(coodry_tylko,do_zwrotu);
+                    startActivity(intent);
+                }
+
 
             }
         });
