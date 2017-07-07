@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000033">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:text="Wybierz kontakt aby usunac go z listy. UWAGA!! Po naciśnięciu, kontakt usunie się bez jakiegokolwiek alertu. Korzystaj rozważnie"
+        android:layout_weight="0.20"
+        android:textColor="#fbfbfb"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_list1"
+        android:background="#fbfbfb"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
