@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#330000">
+
+
+
+    <EditText
+        android:id="@+id/editInBezWyboru"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:editable="false"
+        android:textColor="#fbfbfb"
+        android:layout_weight="0.00">
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:hint="Wprowadz nr telefonu"
+        android:phoneNumber="true"
+        android:textColorHint="#66ffcc"
+        android:textColor="#66ffcc"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/editText4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:textColorHint="#66ffcc"
+        android:textColor="#66ffcc"
+        android:hint="Wiadomosc dodatkowa"
+        android:layout_above="@+id/wyslij"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginBottom="103dp" />
+
+    <Button
+        android:id="@+id/wyslij"
+        android:layout_width="200dp"
+        android:layout_height="-10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.07"
+        android:text="Wyślij"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editText4"></Button>
+
+</RelativeLayout>

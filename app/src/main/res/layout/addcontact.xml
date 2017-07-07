@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000033">
+
+
+
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="200dp"
+        android:layout_height="-10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.07"
+        android:text="ADD"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"></Button>
+
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="200dp"
+        android:layout_height="-10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.07"
+        android:text="Clear ALL Contact"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"></Button>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Phone Number"
+        android:phoneNumber="true"
+        android:textColorHint="#66ffcc"
+        android:textColor="#fbfbfb"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:textColorHint="#66ffcc"
+        android:textColor="#fbfbfb"
+        android:hint="Enter Name"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/add"
+        android:layout_alignStart="@+id/editText" />
+
+
+
+
+</RelativeLayout>

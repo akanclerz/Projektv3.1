@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000033"
+    android:weightSum="1">
+
+
+    <EditText
+    android:id="@+id/editT"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+        android:editable="false"
+    android:textColor="#fbfbfb"
+        android:layout_weight="0.07">
+
+    <requestFocus></requestFocus>
+</EditText>
+
+    <Button
+        android:id="@+id/dalej"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="14dp"
+        android:text="DALEJ"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.14"
+        android:layout_below="@+id/editT"
+        android:layout_centerHorizontal="true"></Button>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wybierz osobę do której chcesz wysłać współrzędne. Jeśli nie ma jej na liście kliknij przycisk DALEJ"
+        android:layout_weight="0.20"
+        android:textColor="#fbfbfb"
+        android:gravity="center"
+        android:id="@+id/tekst"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_list"
+        android:background="#fbfbfb"
+        android:layout_below="@+id/tekst"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FindMe</string>
+
+
+    <string-array name="galaxy_a5">
+        <item>Procesor: Samsung Exynos 7580 (8 rdzeni, 1.60 GHz, A53)</item>
+        <item>Pamięć RAM: 2GB</item>
+        <item>system operacyjny: Android 5.1 </item>
+        <item>Pamięć wbudowana: 16GB</item>
+        <item>Przekątna ekranu: 5,2"</item>
+        <item>Rozdzielczość ekranu: 1920x1080</item>
+        <item>Bateria: Litowo-jonowa 2900 mAh</item>
+        <item>Aparat: 5.0 Mpix - przód,  13.0 Mpix - tył</item>
+        <item>Gwarancja: 24 miesiące (gwarancja producenta)</item>
+    </string-array>
+
+
+</resources>
