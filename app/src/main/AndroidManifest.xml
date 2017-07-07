@@ -36,6 +36,9 @@
         <activity android:name=".WyslijZWyborem">
         </activity>
 
+        <activity android:name=".Usun_Kontakt">
+        </activity>
+
     </application>
 
 </manifest>

@@ -112,8 +112,7 @@ public class MainActivity extends AppCompatActivity
         if (flag) {
 
             Log.v(TAG, "onClick");
-            s = "Please!! move your device to" +
-                    " see the changes in coordinates." + "\nWait..";
+            s = "Ustalanie współrzędnych... Aby przyśpieszyć ten proces, nie stój w miejscu :)";
 
             editLocation.setText(s);
 
@@ -180,21 +179,13 @@ public class MainActivity extends AppCompatActivity
 
             editLocation.setText("");
             pb.setVisibility(View.INVISIBLE);
-
-            /*
-            Toast.makeText(getBaseContext(), "Location chaned : Lat: " + loc.getLatitude() + "Lng: "
-                    + loc.getLongitude(), Toast.LENGTH_SHORT).show();
-                    */
-
             String longitude = loc.getLongitude() + "E";
             Log.v(TAG, longitude);
 
             String latitude =  loc.getLatitude() + "N";
             Log.v(TAG, latitude);
 
-                /*----------to get City-Name from coordinates ------------- */
-
-            String cityName = null;
+            String cityName = "Lublin";
             Geocoder gcd = new Geocoder(getBaseContext(), Locale.getDefault());
             List<Address> addresses;
 
@@ -208,7 +199,7 @@ public class MainActivity extends AppCompatActivity
                 e.printStackTrace();
             }
 
-            s = "Moja lokalizacja: "+"\n"+longitude + "\n" + latitude + "\n\n My Current City is: " + cityName;
+            s = "Moja lokalizacja: "+"\n"+longitude + "\n" + latitude + "\n\n Miasto w którym się znajduję: " + cityName;
             do_zwrotu = longitude + " " + latitude;
             editLocation.setText(s);
         }

@@ -26,9 +26,22 @@
         android:layout_marginLeft="10dp"
         android:layout_weight="0.07"
         android:text="Clear ALL Contact"
+
+        android:layout_marginTop="85dp"
         android:layout_below="@+id/add"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"></Button>
+        android:layout_alignEnd="@+id/add"></Button>
+
+
+    <Button
+        android:id="@+id/remove1"
+        android:layout_width="200dp"
+        android:layout_height="-10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="0.07"
+        android:text="delete one contact"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/add"
+        android:layout_alignStart="@+id/remove"></Button>
 
 
     <EditText

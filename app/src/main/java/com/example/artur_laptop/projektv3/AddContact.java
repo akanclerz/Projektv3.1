@@ -1,5 +1,7 @@
 package com.example.artur_laptop.projektv3;
 
+import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +34,7 @@ public class AddContact extends AppCompatActivity {
 
         Button add = (Button) findViewById(R.id.add);
         Button remove = (Button) findViewById(R.id.remove);
+        Button remove1 = (Button) findViewById(R.id.remove1);
 
         add.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -41,6 +44,16 @@ public class AddContact extends AppCompatActivity {
         remove.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 usun();
+            }
+        });
+
+        remove1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Context context;
+                context = getApplicationContext();
+                Intent intent = new Intent(context,Usun_Kontakt.class);
+                startActivity(intent);
+
             }
         });
 

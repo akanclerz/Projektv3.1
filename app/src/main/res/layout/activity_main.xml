@@ -60,7 +60,7 @@
             android:layout_marginLeft="-145dp"
             android:layout_marginTop="0dp"
             android:layout_weight="0.14"
-            android:text="Add contact"></Button>
+            android:text="Manage contact"></Button>
         <Button
             android:id="@+id/compass"
             android:layout_width="120dp"

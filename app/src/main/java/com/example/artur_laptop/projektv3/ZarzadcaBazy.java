@@ -82,6 +82,28 @@ public class ZarzadcaBazy extends SQLiteOpenHelper {
         return names;
     }
 
+
+    public ArrayList<String> getAllContact()
+    {
+        ArrayList<String> names = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selectAllNames = "SELECT * FROM " + "telefony";
+        String temp;
+        Cursor c = dajWszystkie();
+        if(c.moveToFirst()){
+            temp = c.getString(2) + " " + c.getString(1);
+            names.add(temp);
+        }
+
+        while(c.moveToNext())
+        {
+            temp = c.getString(2) + " " + c.getString(1);
+            names.add(temp);
+        }
+        return names;
+    }
+
+
     public String zwroc_nr(String nazwa)
     {
         SQLiteDatabase db = this.getReadableDatabase();
